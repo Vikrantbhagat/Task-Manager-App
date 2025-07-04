@@ -1,0 +1,28 @@
+/* Light / dark adaptable */
+:root {
+  /* --auth-bg: linear-gradient(135deg, #b6b6e3, #8b9fc4, #cd91c4); */
+  --card-shadow: 0 1rem 2rem rgba(11, 10, 10, 0.15);
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--auth-bg);
+}
+
+.auth-card {
+  max-width: 420px;
+  width: 100%;
+  box-shadow: var(--card-shadow);
+  border-radius: 1rem;
+  overflow: hidden;
+  animation: slideUp .6s ease-out;
+}
+
+@keyframes slideUp {
+  0%   { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0);   opacity: 1; }
+}
+

@@ -1,0 +1,33 @@
+/* background */
+:root {
+  /* --task-bg: linear-gradient(135deg, #cfe9ff, #e4ecff); */
+  --card-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.taskform-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--task-bg);
+  padding: 2rem 1rem;
+}
+
+.task-card {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 1rem;
+  box-shadow: var(--card-shadow);
+  animation: rise 0.5s ease-out;
+}
+
+@keyframes rise {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* toggle color ring when selecting priority */
+.priority-option input:checked + label {
+  border-color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), 0.1);
+}
