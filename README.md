@@ -1,16 +1,62 @@
-<<<<<<< HEAD
-# React + Vite
+📌 Project Overview
+The Task Manager Application is a full-stack web application that enables users to register, log in securely using JWT, and manage their tasks efficiently with a clean and modern UI. This project is built using the MERN-like stack with MySQL, demonstrating real-world CRUD operations, protected routes, and REST API integration.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tech Stack
+Frontend:
 
-Currently, two official plugins are available:
+React.js (Vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Axios for HTTP requests
 
-## Expanding the ESLint configuration
+React Router DOM for navigation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Task-Manager-App
->>>>>>> a38ca362c316d22be33e1767601a2f2effffb221
+Bootstrap for responsive and modern UI
+
+Backend:
+
+Node.js + Express.js
+
+RESTful API design
+
+JWT for authentication
+
+bcrypt.js for password hashing
+
+Database:
+
+MySQL (with Sequelize or raw SQL queries)
+
+Relational schema for User and Task models
+
+Deployment:
+
+Frontend: Vercel
+
+Backend: Render
+
+Remote DB: PlanetScale / ClearDB (MySQL-compatible)
+
+✨ Key Features
+🔐 User Authentication
+
+Secure login and registration using JWT
+
+Passwords are encrypted with bcrypt
+
+✅ Task Management
+
+Create, update, delete, and view tasks
+
+Filter tasks by status (Pending, In Progress, Completed)
+
+🔒 Protected Routes
+
+Only logged-in users can access the dashboard and task management features
+
+🧭 Routing
+
+Seamless navigation using React Router DOM
+
+📱 Responsive Design
+
+Clean and mobile-friendly UI built with Bootstrap
